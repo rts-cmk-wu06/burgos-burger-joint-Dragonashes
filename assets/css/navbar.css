@@ -1,0 +1,116 @@
+/* *{outline: 1px solid blue;} */
+.uicolor {
+    word-break: break-all;
+    z-index: 1;
+    display: grid;grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;place-items: center;
+    position: absolute;
+        width: 100%;
+    margin-top: 220px;
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+    nav {
+        grid-template-rows: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        grid-template-rows: 45px;
+    }
+}
+
+.logodiv {
+    justify-self: left;
+}
+
+.logo {
+    width: 66px;
+    height: 66px;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.menulink {
+    padding: 20px 40px;
+}
+
+/* dropdown */
+
+.burgermenu {
+    font-size: 33px;
+    margin-right: 10px;
+    display: flex;
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: end;
+}
+
+@media only screen and (max-width: 900px) {
+    .burgermenu {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .burgermenu {
+        font-size: 16px;
+    }
+}
+
+.dropdown {
+    position: relative;
+    text-align: center;
+    background: rgba(53, 63, 98, 0.9);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: -1px;
+    width: auto;
+    background: rgba(53, 63, 98, 0.9);
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .dropdown-content {
+        top: 40px;
+    }
+}
+
+.dropdown-content a:hover {
+    background: grey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+    margin: 11px;
+}
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    width: 100%;
+    border-top: 0.2em solid #fff;
+}

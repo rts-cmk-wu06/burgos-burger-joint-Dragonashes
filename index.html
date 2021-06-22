@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgos Burger Joint</title>
+    <!-- <link rel="icon" href="assets/images/favicon.png" type="image/png"> -->
+    <link rel="icon" href="assets/images/burger_ikon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/popup.css">
+    <link rel="stylesheet" href="assets/css/local.css">
+    <link rel="stylesheet" href="assets/css/nyhedsbrev.css">
+</head>
+
+<body>
+    <script src="assets/js/formvalidation.js" type="text/javascript" defer></script>
+    <script src="assets/js/popup.js" type="text/javascript" defer></script>
+    <script src="assets/js/array.js"></script>
+    <script src="assets/js/local.js"></script>
+    <nav class="uicolor">
+        <a href="index.html" class="logodiv"><img src="assets/images/burger_ikon@2x.png" class="logo"></a>
+        <div role="cell"></div>
+        <a class="privatliv" href="#">Home</a>
+        <a class="privatliv" href="#">Galleri</a>
+        <a class="privatliv" href="#">Anbefalede</a>
+        <a class="privatliv" href="#">Kontakt</a>
+    </nav>
+
+    <!-- intro -->
+    <img src="assets/images/hero01.jpg" class="introimg"><br>
+
+    <div class="makespace"></div>
+    <div class="makespace"></div>
+
+    <div style="display: grid;grid-template-columns: 1fr 80% 1fr;place-items: center;">
+        <img class="item1" src="assets/images/tilbud/sommertilbud.png" style="width: 100%;height:auto;grid-column: 2;">
+    </div>
+
+
+
+
+
+
+
+    <!-- reklame 1 -->
+    <style>
+        .reklamegrid {
+            display: grid;
+            grid-template-columns: repeat(30, 1fr);
+            grid-template-rows: repeat(30, 1fr);
+            width: 100%;
+        }
+
+        .item1 {
+            grid-column: 1/span 30;
+            grid-row: 1/span 30;
+        }
+
+        .item2 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    </style>
+    <!-- <div class="reklamegrid">
+        <img class="item1" src="assets/images/tilbud/Banner.png" class="">
+        <img class="item2" src="assets/images/tilbud/Content.png" class="">
+    </div> -->
+
+
+
+
+
+
+
+
+    <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    ">
+        <div>
+            <h2>GALLERI</h2>
+            <div id="GalleriContainer">
+                <div id="Galleri">
+                    <img id="GalleriBillede" src="assets/images/galleri05.jpg">
+                    <div id="GalleriThumbnails"></div>
+                    <div id="GalleriKnapper">
+                        <input type="button" id="KnapTilbage" value="<">
+                        <input type="button" id="KnapFrem" value=">">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Vores YUMMY opskrift</h3>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.</span>
+            <br><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled
+                it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                PageMaker
+                including versions of Lorem Ipsum.</span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div style="background: #F58633; padding: 22px;">
+        <h2 style="display: grid;place-items: center;">ANBEFALEDE YUMMIES</h2>
+
+        <div style="display: grid;gap: 5px;grid-template-columns: 1fr 1fr 1fr 1fr; place-items: center;">
+            <img src="assets/images/favorit01.jpg">
+            <img src="assets/images/favorit02.jpg">
+            <img src="assets/images/favorit03.jpg">
+            <img src="assets/images/favorit04.jpg">
+        </div>
+    </div> -->
+
+    <!-- skal bruge i øjeblikket -->
+    <div class="overlay">
+        <div id="overlay-content"></div>
+    </div>
+    <!-- grid autofit vs autofill?? -->
+    <main style="background: #F58633; padding: 22px;">
+
+        <h2 style="display: grid;place-items: center;">ANBEFALEDE YUMMIES</h2>
+        <div class="makespace"></div>
+        <div class="griddefine"
+            style="display: grid;gap: 5px;grid-template-columns: 1fr 1fr 1fr 1fr; place-items: center;"></div>
+        <div class="makespace"></div>
+    </main>
+
+    <style>
+        .favorite {
+            background: #FBB731;
+            color: black;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+<form id="nyhedsbrev" method="POST">
+    <h2 class="nyhedsbrev-titel">KONTAKT</h2>
+
+    <label class="nyhedsbrev-navn">Navn</label>
+    <p class="nyhedsbrev-navn-fejl" id="FejlBesked1"></p>
+    <input class="nyhedsbrev-navn-input" id="InputNavn">
+
+    <label class="nyhedsbrev-telefon">telefon</label>
+    <p class="nyhedsbrev-telefon-fejl" id="FejlBesked2"></p>
+    <input class="nyhedsbrev-telefon-input" id="Inputtelefon">
+
+    <label class="nyhedsbrev-Mail">Mail</label>
+    <p class="nyhedsbrev-mail-fejl" id="FejlBesked3"></p>
+    <input class="nyhedsbrev-mail-input" id="InputMail">
+
+    <button class="nyhedsbrev-button" id="InputSend">Send</button>
+</form>
+
+
+    <footer>
+
+
+
+        <div class="instagrid">
+            <img class="instagridimg" src="assets/images/footer01.png">
+            <h2 style="grid-row: 1/span 2;grid-column: 4/span 4;">
+                <span style="font-size:64px;">FØLG OS PÅ INSTAGRAM</span>
+                <a href="#">
+                    <div style="display: grid;grid-template-columns: 1;grid-template-rows: 1;place-items: center;">
+                        <img src="assets\images\headerfootericons/Icon.png" style="grid-row: 1;grid-column: 1;" class="social2">
+                        <img src="assets/images/social/instagram.png" style="grid-row: 1;grid-column: 1;" class="social">
+                    </div>
+
+                    @Burgos_YUMMIES
+                </a>
+            </h2>
+        </div>
+
+        <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        place-items: center;
+        ">
+            <div class="socialgrid">
+                <a href="#"><img src="assets/images/social/facebook.png" class="social"></a>
+                <a href="#"><img src="assets/images/social/twitter.png" class="social"></a>
+                <a href="#"><img src="assets/images/social/GitHub-Mark-Light-120px-plus.png" class="social"></a>
+            </div>
+            <a href="#">til top</a>
+            <div class="test copyright">Yummy © Burgos burgers ApS – All rights reserved Copyrights 2021</div>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
