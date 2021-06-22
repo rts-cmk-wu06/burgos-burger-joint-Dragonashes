@@ -26,12 +26,18 @@
 
 @media (max-width: 700px) {
     .instagridimg {
-        
-    }
-    .instatitle {
-        
+        grid-row: 1;
+        grid-column: 1;
     }
 }
+@media (max-width: 700px) {
+    .instatitle {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+}
+
 
 .instagridimg {
     width: 400px;
