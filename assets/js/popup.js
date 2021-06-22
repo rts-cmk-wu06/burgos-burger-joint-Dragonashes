@@ -20,7 +20,7 @@ for (var item of popuparray) {
         `<div data-img="${item.id}" class="item">
             <button class="select">` +
                 `${item.status2 ? `<img src=assets/images/${item.id} class="imggrid">` : `<img src=assets/images/${item.id} class="imggrid">`}` +
-                `${item.download ? `${item.download}` + `</a>` : ''}` +
+                `${item.download ? `<div class=salestext>${item.download}` + `</div>` : ''}` +
                 `${item.status1 ? `<span class="favorite"><img src=assets/images/burger_ikon.png class=favburger>FAVORIT</span>` : ''}` +
             `</button>
         </div>`

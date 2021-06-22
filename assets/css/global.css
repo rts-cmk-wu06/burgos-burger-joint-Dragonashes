@@ -21,10 +21,6 @@ a {
     color: lime;
 }
 
-.privatliv {
-    text-decoration: underline;
-}
-
 @keyframes blureffect {
     0% {
         filter: blur(21px);
@@ -45,6 +41,7 @@ a {
 }
 
 body {
+    /* onload blur */
     animation: 1.1s ease-out 0s 1 blureffect;
     background: green;
     margin: 0;
@@ -53,12 +50,10 @@ body {
     color: white;
 }
 
-main {
-    /* margin: 200px; */
-}
-
 .uicolor a {
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 @media (max-width: 700px) {
@@ -93,10 +88,3 @@ main {
     height: 80px;
 }
 
-.favburger{
-    width: 30px;
-    height: auto;
-}
-.favorite{
-    place-self: center;
-}

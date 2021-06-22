@@ -5,14 +5,53 @@
     place-items: center;
 }
 
+.sommertilbud {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    place-items: center;
+}
+
+.reklamegrid {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    width: 100%;
+}
+
+.item1 {
+    grid-column: 1/span 30;
+    grid-row: 1/span 30;
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+}
+
+.item2 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* yummies */
+
+.yummies {
+    background: #F58633;
+    display: grid;
+    grid-template-rows: 1fr 1fr 6fr;
+}
+
+.yummies-title {
+    display: grid;
+    place-items: center;
+}
+
 /* image grid */
 
 .griddefine {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 500px;
     place-items: center;
     gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media only screen and (max-width: 900px) {
@@ -97,4 +136,64 @@
 
 .soldimg {
     filter: blur(4px) grayscale(100%);
+}
+
+/* galleri */
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+#GalleriContainer {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.galleriogtekst {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.galleridiv1 {
+    width: 50%;
+}
+
+#Galleri {
+    width: 160%;
+    background-color: #000;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.favorite {
+    background: #FBB731;
+    color: black;
+}
+
+#KnapTilbage, #KnapFrem {
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+#GalleriBillede {
+    width: 100%;
+    height: auto;
+}
+
+#GalleriThumbnails {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#GalleriThumbnails a {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+    border-radius: 50%;
 }

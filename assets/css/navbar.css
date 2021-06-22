@@ -1,11 +1,33 @@
-/* *{outline: 1px solid blue;} */
 .uicolor {
     word-break: break-all;
     z-index: 1;
-    display: grid;grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
+    place-items: center;
     position: absolute;
-        width: 100%;
+    width: 100%;
     margin-top: 220px;
+}
+
+.burgerplacement {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30px 30px;
+}
+
+.burgerimg {
+    width: 30px;
+    height: auto;
+}
+
+.setter1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.setter2 {
+    grid-row: 1;
+    grid-column: 2;
 }
 
 @media (orientation: landscape) and (max-width: 900px) {
